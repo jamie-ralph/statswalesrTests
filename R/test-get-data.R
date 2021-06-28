@@ -39,4 +39,4 @@ if("metrics-results.csv" %in% list.files("results")) {
 
 
 # Write out to new csv
-write.csv(updated_metrics, file = "results/metrics-results.csv")
+write.csv(updated_metrics, file = "results/metrics-results.csv", row.names = F)
