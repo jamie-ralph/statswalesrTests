@@ -28,6 +28,8 @@ new_metrics <- tryCatch(
 if("metrics-results.csv" %in% list.files("results")) {
 
     old_metrics <- read.csv("results/metrics-results.csv")
+    
+    print(old_metrics)
 
     updated_metrics <- rbind(old_metrics, new_metrics)
 
